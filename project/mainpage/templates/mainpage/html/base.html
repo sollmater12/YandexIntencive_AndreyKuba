@@ -20,6 +20,7 @@
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
+
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
@@ -32,13 +33,12 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link type="text/css" href="{% static 'mainpage/css/product.css'  %}" rel="stylesheet"/>
     <link type="text/css" href="{% static 'mainpage/css/cover.css'  %}" rel="stylesheet"/>
 </head>
-<body class="d-flex h-100 text-center text-white bg-dark">
+<body class="d-flex h-1000 text-center text-white bg-dark">
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <main class="px-3">
+    <main style="text-align: justify">
         {% block content %}
         {% endblock %}
     </main>
